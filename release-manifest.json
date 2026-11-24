@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "manifest_type": "moyu_release_candidate",
+  "generated_at": "2026-11-09T18:24:45.600Z",
+  "release_status": "manual_required",
+  "project": {
+    "name": "摸鱼有限公司",
+    "version": "0.3.0-alpha.1",
+    "godot_version": "4.7.2.stable",
+    "bundle_identifier": "com.moyugaming.desktop-overlay",
+    "export_version": "0.3.0"
+  },
+  "artifact": {
+    "path": "build/macos/moyu-gaming.zip",
+    "bytes": 75932542,
+    "sha256": "394e85b81e9d1ba9118b97f669ef6673b37d9f3cd78e66d4721f2dcec7c65e7a",
+    "zip_entries": 8,
+    "embedded_pck_entry": "摸鱼有限公司.app/Contents/Resources/摸鱼有限公司.pck"
+  },
+  "pck": {
+    "embedded_bytes": 18375904,
+    "embedded_sha256": "1ca8d5519cb511a4e6a715ec5800ce6c7235c485fccfdd6a65e60b4327669409",
+    "separate_artifact": {
+      "path": "build/macos/moyu-gaming.pck",
+      "bytes": 18375904,
+      "sha256": "1ca8d5519cb511a4e6a715ec5800ce6c7235c485fccfdd6a65e60b4327669409",
+      "matches_embedded": true
+    }
+  },
+  "signing": {
+    "status": "manual_required",
+    "identity": null,
+    "notarization": "manual_required",
+    "note": "此 manifest 不签名、不上传、不调用 notarytool；签名/公证必须由发布负责人在目标机器完成。"
+  },
+  "verification": {
+    "manifest_checks": [
+      "zip_integrity",
+      "single_embedded_pck",
+      "project_metadata",
+      "manual_gate_summary"
+    ],
+    "manual_gate_report": {
+      "path": "build/manual-gates-report.json",
+      "release_ready": false,
+      "summary": {
+        "total": 10,
+        "manual_required": 10,
+        "in_progress": 0,
+        "passed": 0,
+        "failed": 0
+      },
+      "gates": [
+        {
+          "id": "p1.desktop_passthrough",
+          "phase": "P1",
+          "category": "platform",
+          "status": "manual_required",
+          "evidence_count": 4,
+          "review": null
+        },
+        {
+          "id": "p1.multibox_dead_zone",
+          "phase": "P1",
+          "category": "platform",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p1.accessibility_desktop",
+          "phase": "P1",
+          "category": "accessibility",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p1.global_boss_key",
+          "phase": "P1",
+          "category": "platform",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p3.route_playtest",
+          "phase": "P3",
+          "category": "playtest",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p3.long_run_stability",
+          "phase": "P3",
+          "category": "stability",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p4.asset_license_release",
+          "phase": "P4",
+          "category": "release",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p4.release_signing",
+          "phase": "P4",
+          "category": "release",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p5.clean_machine_install",
+          "phase": "P5",
+          "category": "release",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        },
+        {
+          "id": "p5.external_playtest",
+          "phase": "P5",
+          "category": "playtest",
+          "status": "manual_required",
+          "evidence_count": 0,
+          "review": null
+        }
+      ]
+    },
+    "external_pck_matches_embedded": true
+  }
+}
